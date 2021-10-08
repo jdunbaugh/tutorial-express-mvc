@@ -4,7 +4,7 @@
   "description": "A tutorial on implementing MVC using node, express, and postgres from the ground up.",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "nodemon --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/bernardm/tutorial-express-mvc/issues"
   },
-  "homepage": "https://github.com/bernardm/tutorial-express-mvc#readme"
+  "homepage": "https://github.com/bernardm/tutorial-express-mvc#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
